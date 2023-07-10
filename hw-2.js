@@ -39,4 +39,15 @@ let age = Number(prompt('Сколько вам лет?'));
 alert(age);
 
 
-let user = {name: Ivan, age: 25, isAdmin:}
+let user = {name: "Ivan", age: 25, isAdmin: false,};
+user.cityOfResidence = "Tula";
+
+user.age = 31;
+
+delete user.cityOfResidence;
+let info = prompt('Какую информацию хотите узнать о пользователе?')
+console.log(user);
+
+
+let newName = String(prompt('Как вас зовут?'));
+alert (`Привет, &{newName}`);
