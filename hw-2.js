@@ -45,9 +45,10 @@ user.cityOfResidence = "Tula";
 user.age = 31;
 
 delete user.cityOfResidence;
-let info = prompt('Какую информацию хотите узнать о пользователе?')
-console.log(user);
+let info = prompt("Какую информацию хотите узнать о пользователе?", "name");
+alert(user{info});
+
 
 
 let newName = String(prompt('Как вас зовут?'));
-alert (`Привет, &{newName}`);
+alert (`Привет, ${newName}`);
