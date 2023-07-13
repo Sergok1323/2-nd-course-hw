@@ -94,6 +94,41 @@ if (x%2 == 0){
 }
 
 
+// Задание 8
+
+let clientOS = Number(prompt('Введите 0 (для ios) или 1 (для android'));
+
+if (clientOS != 0 && clientOS != 1) {
+    console.log ('Неккоректный ввод');
+} else if (clientOS ==0) {
+    console.log ('Установите версию приложения для iOS по ссылке');
+} 
+  else {
+    console.log ('Установите версию приложения для Android по ссылке');
+}
+
+
+// Задание 9
+
+let clientOS = Number(prompt('Введите 0 (для ios) или 1 (для android'));
+let clientDeviceYear = Number(prompt('Введите год выпуска вашего телефона'));
+
+if (clientOS != 0 && clientOS != 1 || clientDeviceYear > 2023) {
+    console.log ('Неккоректный ввод');
+} else if (clientOS ==0 && clientDeviceYear >=2015) {
+    console.log ('Установите версию приложения для iOS по ссылке');
+} 
+  else if (clientOS ==0 && clientDeviceYear <2015) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке')
+  }
+
+  else if (clientOS ==1 && clientDeviceYear >=2015) {
+    console.log ('Установите версию приложения для Android по ссылке');
+}
+  else if (clientOS ==1 && clientDeviceYear <2015) {
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+  }
+
 
 
 
