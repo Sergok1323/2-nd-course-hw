@@ -32,6 +32,7 @@
         line-height: 32px;
         &_wide {
             font-weight: 700;
+            transition: all 0.8 ease-in;
         }
     }
     &__button {
@@ -48,6 +49,7 @@
         border: none;
         border-radius: 30px;
         background: #9C0332;
+        transition: all 0.8 ease-in;
     }
 }
 .content {
@@ -92,3 +94,16 @@
         line-height: 32px;
     }
 }
+
+/*Эффекты наведения*/
+.top__text_wide:hover {
+    color:#9C0332;
+}
+.top__button:hover {
+    background: #000915;
+    color: #9C0332;
+}
+.item:hover {
+    box-shadow: 0 0 5px #ccc;
+    transform: scale(1.05);
+    }
