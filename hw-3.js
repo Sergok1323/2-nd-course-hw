@@ -83,13 +83,12 @@ switch (monthNumber) {
 
 // Задание 7
 
-let x = (prompt('Введите любое число'));
+let x = Number(prompt('Введите любое число'));
 console.log(isNaN(x))
 
-if (x%2 == 0){
+if (!isNaN(x) && x % 2 === 0){
       alert('Число четное');
-} 
-      else {
+} else if (!isNaN(x)) {
       alert('Число нечетное');
 }
 
