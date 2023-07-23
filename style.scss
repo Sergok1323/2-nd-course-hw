@@ -12,7 +12,7 @@
     flex-direction: column;
     gap: 32px;
     &__heading {
-        width: 788px;
+        max-width: 788px;
         height: 125px;
         color: #FFF;
         font-family: Montserrat;
@@ -22,7 +22,7 @@
         line-height: normal;
     }
     &__text {
-        width: 481px;
+        max-width: 481px;
         height: 64px;
         color: #FFF;
         font-family: Montserrat;
@@ -71,18 +71,6 @@
     box-sizing: border-box;
     border: none;
     border-radius: 16px;
-    &_game1 {
-        background-image: url(img/game1.jpg);
-        background-repeat: no-repeat;
-    }
-    &_game2 {
-        background-image: url(img/game2.jpg);
-        background-repeat: no-repeat;
-    }
-    &_game3 {
-        background-image: url(img/game3.jpg);
-        background-repeat: no-repeat;
-    }
     &__heading {
         margin-left: 32px;
         margin-bottom: 32px;
@@ -94,6 +82,20 @@
         line-height: 32px;
     }
 }
+.item:nth-child(1) {
+        background-image: url(img/game1.jpg);
+        background-repeat: no-repeat;
+    }
+.item:nth-child(2) {
+        background-image: url(img/game2.jpg);
+        background-repeat: no-repeat;
+    }
+.item:nth-child(3){
+        background-image: url(img/game3.jpg);
+        background-repeat: no-repeat;
+    }
+
+
 
 /*Эффекты наведения*/
 .top__text_wide:hover {
@@ -108,42 +110,6 @@
     transform: scale(1.05);
     }
 
-/* Cтили для мобильного */
 
-@media (max-width: 426px) {
-    
-    .top {
-        padding-left: 16px;
-        padding-right: 16px;
-        height: 735px;
-        background-image: url(img/1pagemobile.jpg);
-        background-size: cover;
-        align-items: center;
-
-        &__heading {
-            width: 343px;
-            text-align: center;
-            font-size: 32px;                                   
-        }
-        &__text {
-            width: 343px;
-            text-align: center;
-            font-size: 14px;
-            line-height: 22px;
-        }      
-    }
-    .content {
-        height: 1221px;
-        padding-left: 16px;
-        padding-right: 16px;
-        display: grid;
-        align-content: center;
-        
-    }
-    .item {
-        width: 343px;
-        &__heading {
-            margin-left: 16px;
-        }
-    }
-}
+@import 'mobile';
+@import 'tablet';
