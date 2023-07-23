@@ -116,6 +116,70 @@
   transform: scale(1.05);
 }
 
+.afterContent {
+  padding-left: 120px;
+  padding-right: 116px;
+  display: flex;
+  flex-direction: row;
+  gap: 135px;
+  background: #000915;
+}
+
+.active {
+  padding-top: 282px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.active__heading {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.active__text {
+  width: 584px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.active__button {
+  height: 48px;
+  width: 234px;
+  margin-top: 12px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 30px;
+  background: #9C0332;
+  transition: all 0.8 ease-in;
+}
+
+.active__button:hover {
+  background: #000915;
+  color: #9C0332;
+}
+
+.vector {
+  width: 485px;
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
+}
+
+.smallImage {
+  display: none;
+}
+
 /* ИМПОРТ СТИЛЕЙ */
 @media (min-width: 375px) and (max-width: 426px) {
   .top {
@@ -150,6 +214,50 @@
   }
   .item__heading {
     margin-left: 16px;
+  }
+  .afterContent {
+    padding-top: 51px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .active {
+    width: 343px;
+    padding-top: 51px;
+    align-items: center;
+  }
+  .active__heading {
+    width: 243px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .active__text {
+    width: 343px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .vector {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .bigImage {
+    display: none;
+  }
+  .smallImage {
+    display: flex;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -206,4 +314,43 @@
     background-image: url(img/game3.jpg);
     background-repeat: no-repeat;
   }
+}
+.afterContent {
+  padding-top: 51px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+.active {
+  width: 343px;
+  padding-top: 51px;
+  align-items: center;
+}
+.active__heading {
+  width: 343px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.active__text {
+  width: 443px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.vector {
+  width: 344px;
+  padding-top: 0px;
+  padding-bottom: 85px;
 }/*# sourceMappingURL=style.css.map */

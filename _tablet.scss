@@ -55,3 +55,42 @@
             background-repeat: no-repeat;
         }
 }
+
+.afterContent {
+    padding-top: 51px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+
+}
+.active {
+    width: 343px;
+    padding-top: 51px;
+    align-items: center;
+    &__heading {
+        width: 343px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__text {
+        width: 443px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}
+.vector {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+}
