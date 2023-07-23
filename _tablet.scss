@@ -20,7 +20,7 @@
     .content {
         padding-top: 127px;
         padding-bottom: 127px;
-        height: 556px;
+        height: 1154px;
 
     }
     .item {
@@ -54,43 +54,21 @@
             background-image: url(img/game3.jpg);
             background-repeat: no-repeat;
         }
+        .afterContent {
+            padding-left: 56px;
+            padding-right: 56px;
+            padding-top: 51px;
+            padding-bottom: 85px;
+            display: flex;
+            flex-direction: column;
+            gap: 128px;
+            align-items: center;
+        }
+        .active {
+            align-items: center;
+            &__text {
+                text-align: center;
+            }
+        }
 }
 
-.afterContent {
-    padding-top: 51px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    align-items: center;
-
-}
-.active {
-    width: 343px;
-    padding-top: 51px;
-    align-items: center;
-    &__heading {
-        width: 343px;
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    &__text {
-        width: 443px;
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 22px;
-    }
-}
-.vector {
-    width: 344px;
-    padding-top: 0px;
-    padding-bottom: 85px;
-}

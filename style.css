@@ -57,6 +57,8 @@
 
 .content {
   height: 556px;
+  padding-left: 120px;
+  padding-right: 120px;
   background-color: #000915;
   display: flex;
   flex-direction: row;
@@ -119,6 +121,8 @@
 .afterContent {
   padding-left: 120px;
   padding-right: 116px;
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
   display: flex;
   flex-direction: row;
   gap: 135px;
@@ -126,10 +130,10 @@
 }
 
 .active {
-  padding-top: 282px;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-top: 48.5px;
 }
 .active__heading {
   color: #FFF;
@@ -172,8 +176,6 @@
 
 .vector {
   width: 485px;
-  padding-top: 233.5px;
-  padding-bottom: 233.5px;
 }
 
 .smallImage {
@@ -216,20 +218,20 @@
     margin-left: 16px;
   }
   .afterContent {
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 51px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-bottom: 85px;
     display: flex;
     flex-direction: column;
     gap: 64px;
+    align-items: center;
+    background: #000915;
   }
   .active {
-    width: 343px;
-    padding-top: 51px;
     align-items: center;
   }
   .active__heading {
-    width: 243px;
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
@@ -250,14 +252,12 @@
   }
   .vector {
     width: 344px;
-    padding-top: 0px;
-    padding-bottom: 85px;
   }
   .bigImage {
     display: none;
   }
   .smallImage {
-    display: flex;
+    display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -281,7 +281,7 @@
   .content {
     padding-top: 127px;
     padding-bottom: 127px;
-    height: 556px;
+    height: 1154px;
   }
   .item {
     width: 343px;
@@ -314,43 +314,20 @@
     background-image: url(img/game3.jpg);
     background-repeat: no-repeat;
   }
-}
-.afterContent {
-  padding-top: 51px;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  align-items: center;
-}
-
-.active {
-  width: 343px;
-  padding-top: 51px;
-  align-items: center;
-}
-.active__heading {
-  width: 343px;
-  color: #FFF;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.active__text {
-  width: 443px;
-  color: #FFF;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 22px;
-}
-
-.vector {
-  width: 344px;
-  padding-top: 0px;
-  padding-bottom: 85px;
+  .afterContent {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    align-items: center;
+  }
+  .active {
+    align-items: center;
+  }
+  .active__text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
