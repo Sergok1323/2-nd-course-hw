@@ -12,7 +12,7 @@
     flex-direction: column;
     gap: 32px;
     &__heading {
-        width: 788px;
+        max-width: 788px;
         height: 125px;
         color: #FFF;
         font-family: Montserrat;
@@ -22,7 +22,7 @@
         line-height: normal;
     }
     &__text {
-        width: 481px;
+        max-width: 481px;
         height: 64px;
         color: #FFF;
         font-family: Montserrat;
@@ -32,6 +32,7 @@
         line-height: 32px;
         &_wide {
             font-weight: 700;
+            transition: all 0.8 ease-in;
         }
     }
     &__button {
@@ -48,6 +49,7 @@
         border: none;
         border-radius: 30px;
         background: #9C0332;
+        transition: all 0.8 ease-in;
     }
 }
 .content {
@@ -69,18 +71,6 @@
     box-sizing: border-box;
     border: none;
     border-radius: 16px;
-    &_1 {
-        background-image: url(img/game1.jpg);
-        background-repeat: no-repeat;
-    }
-    &_2 {
-        background-image: url(img/game2.jpg);
-        background-repeat: no-repeat;
-    }
-    &_3 {
-        background-image: url(img/game3.jpg);
-        background-repeat: no-repeat;
-    }
     &__heading {
         margin-left: 32px;
         margin-bottom: 32px;
@@ -92,3 +82,34 @@
         line-height: 32px;
     }
 }
+.item:nth-child(1) {
+        background-image: url(img/game1.jpg);
+        background-repeat: no-repeat;
+    }
+.item:nth-child(2) {
+        background-image: url(img/game2.jpg);
+        background-repeat: no-repeat;
+    }
+.item:nth-child(3){
+        background-image: url(img/game3.jpg);
+        background-repeat: no-repeat;
+    }
+
+
+
+/*Эффекты наведения*/
+.top__text_wide:hover {
+    color:#9C0332;
+}
+.top__button:hover {
+    background: #000915;
+    color: #9C0332;
+}
+.item:hover {
+    box-shadow: 0 0 5px #ccc;
+    transform: scale(1.05);
+    }
+
+
+@import 'mobile';
+@import 'tablet';

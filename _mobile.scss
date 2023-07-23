@@ -1,0 +1,38 @@
+@media (min-width:375px) and (max-width: 426px) {
+    
+    .top {
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 735px;
+        background-image: url(img/1pagemobile.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+
+        &__heading {
+            width: 343px;
+            text-align: center;
+            font-size: 32px;                                   
+        }
+        &__text {
+            width: 343px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }      
+    }
+    .content {
+        height: 1221px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: grid;
+        align-content: center;
+        
+    }
+    .item {
+        width: 343px;
+        &__heading {
+            margin-left: 16px;
+        }
+    }
+}
