@@ -48,3 +48,66 @@ array.pop()
 console.log (array);
 
 /* Задание 7 */
+
+
+const array = [9, 8, 7, 6, 5];
+let a = Number(prompt('Введите любое число'));
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] == a) {
+        alert ('Угадал');
+        break;
+    }
+    else {
+        alert ('Не угадал');
+    }
+}
+
+/* Задание 8 */
+
+let string = 'abcdef';
+const arrayString = string.split('');
+arrayString.reverse ();
+arrayString.join ('');
+
+/* Задание 9 */
+
+const array = [[1, 2, 3,],[4, 5, 6]];
+
+let newArray = [].concat(array[0], array[1]);
+
+console.log (newArray);
+
+/* Задание 10 */
+
+const array = [4, 6, 9, 1, 7, 8, 3];
+
+for ( let i = 0; i <= array.length; i++) {
+    console.log (array [i]);
+    console.log (array [i] + array [i+1]);
+}
+
+/* Задание 11 */
+
+function numbSquare(arr) {
+    return result = arr.map(item => item**2);
+}
+console.log(numbSquare([2, 3, 4, 5]));
+
+
+/* Задание 12 */
+
+function lenghtWords(arr) {
+    return result = arr.map(item => item.length);
+}
+console.log(lenghtWords(['fdss', 'dfsfda', 'sdsf']));
+
+
+/* Задание 13 */
+
+function filterPositive(array) {
+    return result = array.filter ( item => item >= 0);
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56]));
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
