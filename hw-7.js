@@ -6,6 +6,9 @@ let string = "AbraKaADAbra";
 
  /* Задание 2 */
 
+ function (params) {
+   
+ }
 
 
  /* Задание 3 */
@@ -28,7 +31,69 @@ console.log(z);
 
  /* Задание 5 */
 
- function randomInt(1, 10) {
-    return Math.random() * (max - min) + min;
- }
-console.log(randomInt());
+function randomInt(minValue, maxValue) {
+   return Math.round (Math.random() * maxValue);
+}
+console.log(randomInt(1,10));
+
+/* Задание 6 */
+
+function getRandomArrNumbers (n) {
+   let arr = [];
+   for (let i = 0; i <= Math.floor(n/2); i++) {
+      x = Math.round (Math.random()*n);
+      arr.push(x);
+      return arr;
+   }
+}
+console.log(getRandomArrNumbers(9));
+
+/* Задание 7 */
+
+function randomRange(a,b) {
+   a = Math.round(a);
+   b = Math.round(b);
+   if (a > b) {
+      c = Math.round ( Math.random() *a);
+      return c;
+   } else if (a < b) {
+      c = Math.round ( Math.random() *b);
+      return c;   
+   } else {
+      console.log('Невозможно получить диапазон');
+   }
+}
+
+console.log(randomRange(3,15));
+
+/* Задание 8 */
+
+let currentDate = new Date();
+console.log(currentDate);
+
+/* Задание 9 */
+
+const currentDate = new Date();
+
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+/* Задание 10 */
+
+function russianDate() {     
+   const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+   const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+   let myDate = new Date();
+   let fullDate = "Дата: " + myDate.getDate() +" " + months[myDate.getMonth()] +" " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
+   let time = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+   let DATE = { fullDate, 
+               time, };
+   console.log(DATE);
+}
+console.log(russianDate());
+
+/* Задание 11 */
+// Записано в отдельном файле hw-7_1.js
+
+
+
