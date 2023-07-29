@@ -110,7 +110,7 @@
     transform: scale(1.05);
     }
 
-.afterContent {
+.firstGame {
     padding-left: 120px;
     padding-right: 116px;
     padding-top: 233.5px;
@@ -168,7 +168,18 @@
 }
 .smallImage {
     display: none;
-}    
+} 
+
+.secondGame {
+    padding-left: 120px;
+    padding-right: 116px;
+    padding-top: 239px;
+    padding-bottom: 239px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 135px;
+    background: #000915;
+}
 
     /* ИМПОРТ СТИЛЕЙ */
 

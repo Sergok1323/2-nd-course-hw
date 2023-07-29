@@ -1,4 +1,4 @@
-@media (min-width:375px) and (max-width: 426px) {
+@media (min-width:375px) and (max-width: 767px) {
 
     .top {
         padding-left: 16px;
@@ -35,7 +35,18 @@
             margin-left: 16px;
         }
     }
-    .afterContent {
+    .firstGame {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        align-items: center;
+        background: #000915;
+    }
+    .secondGame {
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 51px;

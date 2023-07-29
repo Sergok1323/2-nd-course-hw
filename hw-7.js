@@ -4,10 +4,16 @@ let string = "AbraKaADAbra";
  string = string.toUpperCase();
  alert(`${string}`);
 
- /* Задание 2 */
+ /* Задание 2 */ /* Не решено */
 
- function (params) {
-   
+ function searchStart (arr, str) {
+   const search = str;
+   arr.forEach ((arr) => {
+      if (arr.toLowerCase().startsWith(search.toLowerCase())) {
+         console.log(arr);
+      }
+   });
+   console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
  }
 
 
@@ -36,17 +42,16 @@ function randomInt(minValue, maxValue) {
 }
 console.log(randomInt(1,10));
 
-/* Задание 6 */
+/* Задание 6  */
 
 function getRandomArrNumbers (n) {
    let arr = [];
-   for (let i = 0; i <= Math.floor(n/2); i++) {
-      x = Math.round (Math.random()*n);
-      arr.push(x);
-      return arr;
+   for (let i = 0; i < Math.floor(n/2); i++) {
+      arr[i] = Math.round(Math.random()*n);
    }
+   return arr;
 }
-console.log(getRandomArrNumbers(9));
+console.log(getRandomArrNumbers(25));
 
 /* Задание 7 */
 

@@ -118,7 +118,7 @@
   transform: scale(1.05);
 }
 
-.afterContent {
+.firstGame {
   padding-left: 120px;
   padding-right: 116px;
   padding-top: 233.5px;
@@ -182,8 +182,19 @@
   display: none;
 }
 
+.secondGame {
+  padding-left: 120px;
+  padding-right: 116px;
+  padding-top: 239px;
+  padding-bottom: 239px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 135px;
+  background: #000915;
+}
+
 /* ИМПОРТ СТИЛЕЙ */
-@media (min-width: 375px) and (max-width: 426px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .top {
     padding-left: 16px;
     padding-right: 16px;
@@ -217,7 +228,18 @@
   .item__heading {
     margin-left: 16px;
   }
-  .afterContent {
+  .firstGame {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    background: #000915;
+  }
+  .secondGame {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 51px;
@@ -314,7 +336,17 @@
     background-image: url(img/game3.jpg);
     background-repeat: no-repeat;
   }
-  .afterContent {
+  .firstGame {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    align-items: center;
+  }
+  .secondGame {
     padding-left: 56px;
     padding-right: 56px;
     padding-top: 51px;
