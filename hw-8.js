@@ -40,8 +40,87 @@ delayForSecond(function () {
   console.log('Привет, Глеб!');
 })
 
-/* Задание 5 */
+/* Задание 2 */
+
+/* ********************************************************************
+
+const arr =[];
+const newArray = arr.map(filter(newArray, callback())) {
+  function isPositive() {
+    newArray.forEach(el) => {
+      if ( el >= 0) {
+        arr.unshift(el);
+      }
+      console.log (arr);
+    }    
+} 
+}
+
+function filter(array) {
+  array.forEach((element) => {
+    if (element >= 0) {
+      newArray.push(element);
+    }
+  });
+  console.log(newArray);
+  }
+  
+console.log(filter([3, -4, 1, 9])); 
+
+
+const newArray = [];
+const people = [
+  {name: 'Глеб', gender: 'male'},
+  {name: 'Анна', gender: 'female'},
+  {name: 'Олег', gender: 'male'},
+  {name: 'Оксана', gender: 'female'}
+];
+ function filter() {
+  people.forEach((element) => {
+    if (element.gender === 'male') {
+      newArray.push(element);
+    }
+    console.log(newArray);
+  });
+ }
+ 
+
+ *******************************************/
 
 
 
 
+ const newArray = [];
+ const people = [
+  {name: 'Глеб', gender: 'male'},
+  {name: 'Анна', gender: 'female'},
+  {name: 'Олег', gender: 'male'},
+  {name: 'Оксана', gender: 'female'}
+];
+
+function isPositive(array) {
+  array.forEach((element) => {
+    if (element >= 0) {
+      newArray.push(element);
+    }
+  });
+  console.log(newArray);
+  }
+  function isMale(array) {
+    array.forEach((element) => {
+      if (element.gender === 'male') {
+        newArray.push(element);
+      }
+      console.log(newArray);
+    });
+  }
+  function filter(array, ruleFunction) {
+    const output =[];
+    for (let i = 0; i < array.length; i++) {
+      output.push(ruleFunction(array[i]));
+    }
+    return output;
+    }
+  
+  console.log(filter([3, -4, 1, 9], isPositive));
+  console.log(filter(people));
