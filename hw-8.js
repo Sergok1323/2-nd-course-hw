@@ -9,7 +9,43 @@ const people = [
 
  console.log(people.sort((a,b) => a.age > b.age ? 1:-1));
 
-/* Задание 2 */
+/************* Задание 2 *********************/
+
+const people = [
+  {name: 'Глеб', gender: 'male'},
+  {name: 'Анна', gender: 'female'},
+  {name: 'Олег', gender: 'male'},
+  {name: 'Оксана', gender: 'female'}
+];
+
+function isPositive(element) {
+    if (element > 0) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+  function isMale(element) {
+      if ((element.gender) === 'male') {
+        return true;
+      } else {
+        return false;
+      }    
+  }
+  
+  function filter(array, ruleFunction) {
+    const output =[];
+    for (let i = 0; i < array.length; i++) {
+      if (ruleFunction(array[i]) != false) {
+        output.push(array[i]);
+      }
+    }
+    return output;
+    }
+  
+  console.log(filter([3, -4, 1, 9], isPositive));
+  console.log(filter(people));
 
 
 /* Задание 3 */
@@ -40,87 +76,30 @@ delayForSecond(function () {
   console.log('Привет, Глеб!');
 })
 
-/* Задание 2 */
 
-/* ********************************************************************
 
-const arr =[];
-const newArray = arr.map(filter(newArray, callback())) {
-  function isPositive() {
-    newArray.forEach(el) => {
-      if ( el >= 0) {
-        arr.unshift(el);
-      }
-      console.log (arr);
-    }    
-} 
+
+
+  /**************** ЗАДАНИЕ 5 ******************** */
+  
+  function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
+
+    }, 1000)
+}
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
 }
 
-function filter(array) {
-  array.forEach((element) => {
-    if (element >= 0) {
-      newArray.push(element);
-    }
-  });
-  console.log(newArray);
+
+// Нужно изменить код ниже:
+function delayForSecondTwo(sayHi) {
+  if (sayHi) {
+    setTimeout (() => {
+      return sayHi();
+    }, 2000)
+  }      
   }
-  
-console.log(filter([3, -4, 1, 9])); 
-
-
-const newArray = [];
-const people = [
-  {name: 'Глеб', gender: 'male'},
-  {name: 'Анна', gender: 'female'},
-  {name: 'Олег', gender: 'male'},
-  {name: 'Оксана', gender: 'female'}
-];
- function filter() {
-  people.forEach((element) => {
-    if (element.gender === 'male') {
-      newArray.push(element);
-    }
-    console.log(newArray);
-  });
- }
- 
-
- *******************************************/
-
-
-
-
- const newArray = [];
- const people = [
-  {name: 'Глеб', gender: 'male'},
-  {name: 'Анна', gender: 'female'},
-  {name: 'Олег', gender: 'male'},
-  {name: 'Оксана', gender: 'female'}
-];
-
-function isPositive(array) {
-  array.forEach((element) => {
-    if (element >= 0) {
-      newArray.push(element);
-    }
-  });
-  console.log(newArray);
-  }
-  function isMale(array) {
-    array.forEach((element) => {
-      if (element.gender === 'male') {
-        newArray.push(element);
-      }
-      console.log(newArray);
-    });
-  }
-  function filter(array, ruleFunction) {
-    const output =[];
-    for (let i = 0; i < array.length; i++) {
-      output.push(ruleFunction(array[i]));
-    }
-    return output;
-    }
-  
-  console.log(filter([3, -4, 1, 9], isPositive));
-  console.log(filter(people));
+delayForSecond(sayHi('Глеб'));
