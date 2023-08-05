@@ -95,11 +95,5 @@ function sayHi (name) {
 
 
 // Нужно изменить код ниже:
-function delayForSecondTwo(sayHi) {
-  if (sayHi) {
-    setTimeout (() => {
-      return sayHi();
-    }, 2000)
-  }      
-  }
-delayForSecond(sayHi('Глеб'));
+
+delayForSecond(() => sayHi('Глеб'));
